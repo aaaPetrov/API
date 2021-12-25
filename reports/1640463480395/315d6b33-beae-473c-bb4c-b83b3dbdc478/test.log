@@ -1,0 +1,3 @@
+[2021-12-25 11:18:00] [CryptoTool.java] [1] [ERROR] Can't load secret key!
+[2021-12-25 11:18:01] [JsonValidator.java] [1] [INFO] JSON schema of version below or equal to draft-04 was detected
+[2021-12-25 11:18:02] [JsonValidator.java] [1] [INFO] Validation against Json schema successfully passed

@@ -1,0 +1,5 @@
+{
+  "owner" : "aaaPetrov",
+  "repo" : "${name}",
+  "name" : "${newName}"
+}

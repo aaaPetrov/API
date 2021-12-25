@@ -48,7 +48,7 @@ public class GithubTest {
     @Test
     public void verifyUserTest() {
         GetUserMethod getUserMethod = new GetUserMethod();
-        getUserMethod.setHeaders(String.format("Authorization=%s","token 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"));
+        getUserMethod.setHeaders(String.format("Authorization=%s","token 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"));
         getUserMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
         getUserMethod.callAPI();
         getUserMethod.validateResponse();
@@ -58,7 +58,7 @@ public class GithubTest {
     @Test
     public void checkCreateRepositoryTest() {
         PostRepositoryMethod postRepositoryMethod = new PostRepositoryMethod();
-        postRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
+        postRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
         postRepositoryMethod.addProperty("name", "POSTED_REPOSITORY");
         postRepositoryMethod.expectResponseStatus(HttpResponseStatusType.CREATED_201);
         postRepositoryMethod.callAPI();
@@ -68,7 +68,7 @@ public class GithubTest {
     @Test(dependsOnMethods = "checkCreateRepositoryTest")
     public void checkUpdateRepositoryTest() {
         PatchRepositoryMethod patchRepositoryMethod = new PatchRepositoryMethod("aaaPetrov", "POSTED_REPOSITORY");
-        patchRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
+        patchRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
         patchRepositoryMethod.addProperty("name", "POSTED_REPOSITORY");
         patchRepositoryMethod.addProperty("newName", "UPDATED_REPOSITORY");
         patchRepositoryMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
@@ -79,7 +79,7 @@ public class GithubTest {
     @Test(dependsOnMethods = "checkUpdateRepositoryTest")
     public void checkDeleteRepositoryTest() {
         DeleteRepositoryMethod deleteRepositoryMethod = new DeleteRepositoryMethod("aaaPetrov", "UPDATED_REPOSITORY");
-        deleteRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
+        deleteRepositoryMethod.setHeaders(String.format("Authorization=%s","token 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"));
         deleteRepositoryMethod.addProperty("name", "UPDATED_REPOSITORY");
         deleteRepositoryMethod.expectResponseStatus(HttpResponseStatusType.NO_CONTENT_204);
         deleteRepositoryMethod.callAPI();

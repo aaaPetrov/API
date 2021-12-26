@@ -12,6 +12,7 @@
         <javaVersion>11</javaVersion>
         <carinaVersion>7.2.14</carinaVersion>
         <mavenSurfirePluginVersion>3.0.0-M5</mavenSurfirePluginVersion>
+        <suite></suite>
     </properties>
 
     <dependencies>
@@ -40,10 +41,8 @@
                 <version>${mavenSurfirePluginVersion}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng-suites/github.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng-suites/${suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <parallel>methods</parallel>
-                    <threadCount>5</threadCount>
                 </configuration>
             </plugin>
         </plugins>

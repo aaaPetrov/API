@@ -1,6 +1,8 @@
 package com.solvd.homework21;
 
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
+import com.solvd.homework21.api.*;
+import com.solvd.homework21.domain.RepositoryInfo;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,7 +14,7 @@ public class GithubTest {
         RepositoryInfo repositoryInfo = new RepositoryInfo();
         repositoryInfo.setRepository("timetable");
         repositoryInfo.setCreatedAt("2021-12-06T07:00:11Z");
-        repositoryInfo.setId(435392525);
+        repositoryInfo.setId(435392525L);
         repositoryInfo.setNodeId("R_kgDOGfOQDQ");
         repositoryInfo.setPushedAt("2021-12-19T15:10:27Z");
         repositoryInfo.setSize(301);
@@ -21,7 +23,7 @@ public class GithubTest {
         RepositoryInfo repositoryInfo1 = new RepositoryInfo();
         repositoryInfo1.setRepository("army");
         repositoryInfo1.setCreatedAt("2021-11-19T18:13:03Z");
-        repositoryInfo1.setId(429893511);
+        repositoryInfo1.setId(429893511L);
         repositoryInfo1.setNodeId("R_kgDOGZ-nhw");
         repositoryInfo1.setPushedAt("2021-12-24T19:59:31Z");
         repositoryInfo1.setSize(187);

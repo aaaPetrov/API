@@ -1,12 +1,13 @@
-package com.solvd.homework21;
+package com.solvd.homework21.domain;
 
 public class RepositoryInfo {
+
     private String repository;
     private String createdAt;
-    private long id;
+    private Long id;
     private String nodeId;
     private String pushedAt;
-    private int size;
+    private Integer size;
     private String updatedAt;
 
     public String getRepository() {
@@ -25,11 +26,11 @@ public class RepositoryInfo {
         this.createdAt = createdAt;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,11 +50,11 @@ public class RepositoryInfo {
         this.pushedAt = pushedAt;
     }
 
-    public int getSize() {
+    public Integer getSize() {
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(Integer size) {
         this.size = size;
     }
 
@@ -64,4 +65,5 @@ public class RepositoryInfo {
     public void setUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
     }
+
 }

@@ -1,4 +1,4 @@
-package com.solvd.homework21;
+package com.solvd.homework21.api;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;

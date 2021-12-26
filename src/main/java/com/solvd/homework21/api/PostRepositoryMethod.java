@@ -1,13 +1,12 @@
-package com.solvd.homework21;
+package com.solvd.homework21.api;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
-import org.testng.annotations.Test;
 
-public class GetUserMethod extends AbstractApiMethodV2 {
+public class PostRepositoryMethod extends AbstractApiMethodV2 {
 
-    public GetUserMethod() {
-        super(null, "get/user/response.json");
+    public PostRepositoryMethod() {
+        super("post/request.json", "post/response.json");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 
